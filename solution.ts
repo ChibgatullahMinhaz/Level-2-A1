@@ -83,7 +83,6 @@ const getUniqueValues = <T extends string | number>(
       seen[key] = true;
     }
   }
-
   for (let i = 0; i < arr2.length; i++) {
     const key = arr2[i];
     if (!seen[key]) {

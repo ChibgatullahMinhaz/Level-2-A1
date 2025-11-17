@@ -1,15 +1,21 @@
 # Interview Questions - Blog Task
 
  1. What are some differences between interfaces and types in TypeScript?
-   
-   ```ts  Type alias:
-interface Person {
+    ## Interface Declare:
+   ```ts  
+ interface Person {
   name: string;
   age: number;
 }
+```
+# Type alias
 
-   
-   ```
+```ts  
+type Person = {
+  name: string;
+  age: number;
+};
+```
 
 
- 2. 
+ 1. 
