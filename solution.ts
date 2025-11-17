@@ -1,4 +1,3 @@
-//* problem 1. Formate Values
 
 type formateValueType = number | string | boolean;
 const formatValue = (value: formateValueType): formateValueType => {
@@ -11,8 +10,6 @@ const formatValue = (value: formateValueType): formateValueType => {
   }
 };
 
-//* problem 2. Get Length of string or array
-
 const getLength = (value: string | any[]): number => {
   if (typeof value === "string") {
     return value.length;
@@ -21,8 +18,6 @@ const getLength = (value: string | any[]): number => {
   }
   return 0;
 };
-
-//* problem 3.
 
 class Person {
   name: string;
@@ -37,8 +32,6 @@ class Person {
   }
 }
 
-//* problem 4.
-
 type filterRatingTypes = {
   title: string;
   rating: number;
@@ -51,7 +44,6 @@ const filterByRating = (
   return arr.filter((item) => item.rating >= minRating);
 };
 
-//* problem 5
 type Users = {
   id: number;
   name: string;
@@ -64,7 +56,6 @@ const filterActiveUsers = (users: Users[]): Users[] => {
   return activeUser;
 };
 
-//* problem 6
 interface Book {
   title: string;
   author: string;
@@ -79,16 +70,12 @@ const printBookDetails = (book: Book) => {
   );
 };
 
-// * problem 7
 const getUniqueValues = <T extends string | number>(
   arr1: T[],
   arr2: T[]
 ): T[] => {
-  //* store unique value
   let uniqValues: T[] = [];
-  // create a object with key string and value boolean;
   let seen: { [key: string]: boolean } = {};
-
   for (let i = 0; i < arr1.length; i++) {
     const key = arr1[i];
     if (!seen[key]) {
@@ -107,8 +94,6 @@ const getUniqueValues = <T extends string | number>(
 
   return uniqValues;
 };
-
-//* problem 8
 
 interface Product {
   name: string;
