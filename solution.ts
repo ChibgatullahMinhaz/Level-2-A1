@@ -91,7 +91,6 @@ const getUniqueValues = <T extends string | number>(
       seen[key] = true;
     }
   }
-
   return uniqValues;
 };
 
